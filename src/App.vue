@@ -4,8 +4,8 @@
 <!--    <router-link to="/about">About</router-link>-->
 <!--    <router-link to="/dashboard">Dashboard</router-link>-->
 <!--  </nav>-->
-<!--  <router-view/>-->
   <HeaderLayout></HeaderLayout>
+  <router-view/>
   <FooterLayout></FooterLayout>
   <FooterBottomLayout></FooterBottomLayout>
 </template>

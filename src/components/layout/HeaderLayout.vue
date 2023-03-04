@@ -51,7 +51,7 @@
 
           <div class="col-md-2">
             <div class="main-logo">
-              <a href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+              <a href="/index.html"><img src="/assets/images/main-logo.png" alt="logo"></a>
             </div>
 
           </div>
@@ -67,7 +67,7 @@
                     <a href="#pages" class="nav-link" data-effect="Pages">Pages</a>
 
                     <ul>
-                      <li class="active"><a href="index.html">Home</a></li>
+                      <li class="active"><a href="/index.html">Home</a></li>
                       <li><a href="about.html">About</a></li>
                       <li><a href="styles.html">Styles</a></li>
                       <li><a href="blog.html">Blog</a></li>
@@ -101,7 +101,7 @@
   </div><!--header-wrap-->
 </template>
 
-<script>
+<script lang="ts">
 import {Vue} from "vue-class-component";
 
 export default class HeaderLayout extends Vue{
