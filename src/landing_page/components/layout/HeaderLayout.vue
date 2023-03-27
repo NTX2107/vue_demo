@@ -61,8 +61,18 @@
             <nav id="navbar">
               <div class="main-menu stellarnav">
                 <ul class="menu-list">
-                  <li class="menu-item active"><a href="#home" data-effect="Home">Home</a></li>
-                  <li class="menu-item"><a href="#about" class="nav-link" data-effect="About">About</a></li>
+                  <li class="menu-item active" v-if="this.$route.name === 'home'">
+                    <router-link :to="{ name: 'home' , params:{}}">Home</router-link>
+                  </li>
+                  <li class="menu-item" v-else>
+                    <router-link :to="{ name: 'home' , params:{}}">Home</router-link>
+                  </li>
+                  <li class="menu-item active" v-if="this.$route.name === 'about'">
+                    <router-link :to="{ name: 'about' , params:{}}">About</router-link>
+                  </li>
+                  <li class="menu-item" v-else>
+                    <router-link :to="{ name: 'about' , params:{}}">About</router-link>
+                  </li>
                   <li class="menu-item has-sub">
                     <a href="#pages" class="nav-link" data-effect="Pages">Pages</a>
 
@@ -102,7 +112,9 @@
 </template>
 
 <script lang="ts">
-import {Vue} from "vue-class-component";
+import {Options, Vue} from "vue-class-component";
+import router from "@/router";
+
 
 export default class HeaderLayout extends Vue{
 

@@ -21,12 +21,15 @@
 
     // Responsive Navigation with Button
 
-  const hamburger = document.querySelectorAll(".hamburger");
-  const navMenu = document.querySelectorAll(".menu-list");
+  // const hamburger = document.querySelectorAll(".hamburger");
+  // const navMenu = document.querySelectorAll(".menu-list");
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".menu-list");
 
-    hamburger.forEach(item => {
-        item.addEventListener("click", mobileMenu)
-    });
+    // hamburger.forEach(item => {
+    //     item.addEventListener("click", mobileMenu)
+    // });
+    hamburger.addEventListener("click", mobileMenu);
 
     function mobileMenu() {
         hamburger.classList.toggle("active");

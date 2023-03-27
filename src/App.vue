@@ -1,13 +1,12 @@
 <template>
-<!--  <nav>-->
-<!--    <router-link to="/">Home</router-link> |-->
-<!--    <router-link to="/about">About</router-link>-->
-<!--    <router-link to="/dashboard">Dashboard</router-link>-->
-<!--  </nav>-->
-  <HeaderLayout></HeaderLayout>
-  <router-view/>
-  <FooterLayout></FooterLayout>
-  <FooterBottomLayout></FooterBottomLayout>
+  <!--  <nav>-->
+  <!--    <router-link to="/">Home</router-link> |-->
+  <!--    <router-link to="/about">About</router-link>-->
+  <!--    <router-link to="/dashboard">Dashboard</router-link>-->
+  <!--  </nav>-->
+  <div>
+
+  </div>
 </template>
 
 <style lang="scss">
@@ -33,7 +32,5 @@ nav {
 }
 </style>
 <script setup lang="ts">
-import FooterLayout from "@/components/layout/FooterLayout.vue";
-import FooterBottomLayout from "@/components/layout/FooterBottomLayout.vue";
-import HeaderLayout from "@/components/layout/HeaderLayout.vue";
+
 </script>

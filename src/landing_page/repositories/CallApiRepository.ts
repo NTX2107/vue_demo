@@ -1,4 +1,4 @@
-import ApiRepository from "@/repositories/base/ApiRepository";
+import ApiRepository from "@/landing_page/repositories/base/ApiRepository";
 
 const filter = '/filter';
 const search = '/search';
